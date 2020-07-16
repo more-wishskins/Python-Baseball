@@ -5,7 +5,7 @@ import numpy as np
 
 
 game_files = glob.glob(os.path.join(os.getcwd(), 'games', '*.EVE'))
-list.sort(game_files)
+sort(game_files)
 
 game_frames= []
 for game_file in game_files:
