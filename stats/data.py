@@ -21,7 +21,7 @@ identifiers = identifiers.fillna(method='ffill')
 identifiers.columns=(['game_id','year'])
 
 games = pd.concat([games, identifiers], axis=1, sort=False)
-games = games.fillna('')
+games = games.fillna(' ')
 games.loc[:, 'type'] = pd.Categorical(games.loc[:, 'type'])
 
 print (games.head())
